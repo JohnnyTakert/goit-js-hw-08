@@ -1,19 +1,27 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 24px;
   list-style: none;
   padding: 0;
 }
+
 .gallery-item {
-  width: calc(33% - 10px);
+  width: calc(33% - 24px);
 }
+
 .gallery-link {
   display: block;
   overflow: hidden;
 }
+
 .gallery-image {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  background-color: rgba(46, 47, 66, 0.8);
 }
